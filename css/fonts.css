@@ -1,0 +1,119 @@
+/*---------- Text ----------*/
+@font-face {
+  font-family: 'Geist';
+  src: url("../fonts/Giest.ttf");
+}
+
+@font-face {
+  font-family: 'Century';
+  src: url('../fonts/Century.TTF');
+}
+
+@font-face {
+  font-family: 'Century-Italic';
+  src: url('../fonts/Century-Italic.ttf');
+}
+
+
+
+/*---------- Mobile ----------*/
+h1, h2 {font-family: 'Geist';}
+h3, p, .display {font-family: 'Century';}
+span {font-family: 'Century-Italic'; }
+.display {
+  font-size: 52px;
+  line-height: 56px;
+  font-weight: 500;
+}
+h1 {
+  font-size: 48px;
+  line-height: 52px;
+  font-weight: 500;
+  margin: 0px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  margin: 16px 0px; 
+
+}
+h3 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  margin: 16px 0px; 
+
+}
+p {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  margin-bottom: 16px; 
+}
+.caption {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+
+
+/* Minimum width for iPads and tablets.  */
+@media all and (min-width: 481px) {
+} /* closes 481px+ */
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+  /* ------- Text ------- */
+    .display {
+    font-size: 100px;
+    line-height: 100px;
+    font-weight: 500;
+    margin: 0; 
+    width: 100%; 
+    text-align: center; 
+    }
+    h1 {
+      font-size: 58px;
+      line-height: 76px;
+      font-weight: 500;
+    }
+    h2 {
+      font-size: 36px;
+      line-height: 48px;
+      font-weight: 500;
+    }
+    h3 {
+      font-size: 20px;
+      line-height: 32px;
+      font-weight: 400;
+    }
+    p {
+      font-size: 20px;
+      line-height: 44px;
+      font-weight: 400;
+    }
+    .caption {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 400;
+    }
+} /* closes 769px+ */
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+} /* closes 1024px+ */
+
+@media all and (min-width: 1800px) {
+  h3 {
+      font-size: 22px;
+      line-height: 32px;
+      font-weight: 400;
+  }
+  p {
+      font-size: 22px;
+      line-height: 46px;
+      font-weight: 400;
+  }
+} /* closes 1800px+ */

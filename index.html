@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Recollecting Roots</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <!--
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    -->
+    
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+  </head>
+
+  <body>
+
+    <header id="mobile-header" class="flex">
+		    <h3>Recollecting Roots</h3>       
+        <button><p>&#8801;</p></button>
+    </header> <!--close mobile-header-->  
+
+    <div id="canvas-container"></div>
+
+    <main id="home">
+      <!--
+      <aside>
+      </aside>
+      --> 
+      <section class="flex">
+
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="card-flex-left">
+            <img src="img/article1_thumb.jpg" alt="">
+          </div>
+          <div class="card-flex-right">
+            <h2>Trophies of Exploitation</h2>
+            <h3><a href="1/index.html">Enter &#xa0; &#8594;</a></h3>
+          </div>
+        </div> <!--close card 1-->
+
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="card-flex-left">
+            <img src="img/article2_thumb.jpg" alt="">
+          </div>
+          <div class="card-flex-right">
+            <h2>Experiences in Displacement</h2>
+            <h3><a href="2/index.html">Enter &#xa0; &#8594;</a></h3>
+          </div>
+        </div> <!--close card 2-->
+
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card-flex-left">
+            <img src="img/article3_thumb.jpg" alt="">
+          </div>
+          <div class="card-flex-right">
+            <h2>Intergenerational Trauma: An Introspective</h2>
+            <h3><a href="3/index.html">Enter &#xa0; &#8594;</a></h3>
+          </div>
+        </div> <!--close card 3-->
+
+      </section> <!--close section--> 
+    </main> <!--close main--> 
+
+    <footer>
+      <!--footer content-->  
+    </footer> <!--close footer--> 
+
+    <script src="sketch.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Write your jQuery code inside of the .ready() function below -->
+    <script>
+      $(document).ready(function() {
+        $('aside').load('modules/aside.html');
+        $('footer').load('modules/footer.html');
+      }); //close .ready()
+    </script>
+  </body>
+</html>

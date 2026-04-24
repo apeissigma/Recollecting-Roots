@@ -1,0 +1,287 @@
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+  box-sizing: border-box; 
+}
+html {
+	font-size: 1em;
+  line-height: 1.4em;
+}
+body {
+  flex-direction: column; 
+  width: 100%; 
+  background-color: #E9DCCF;
+}
+.flex {
+  display: flex; 
+}
+
+
+button {
+  border: none; 
+  background-color: #00000000; 
+}
+.hover {
+  transition: all 200ms;
+}
+.hover:hover {
+  transform: scale(1.05);
+}
+
+
+/*-------------------- Links --------------------*/
+a {
+  color: black;
+}
+a:visited {
+  color: black; 
+}
+a:hover {
+  color: #A74646;
+}
+
+
+
+/*-------------------- Div Container For Canvas --------------------*/
+#canvas-container {
+  border-bottom: 1px solid black; 
+  width: 100%; 
+  height: 100vh; 
+}
+
+
+
+/*-------------------- Mobile Nav --------------------*/
+#mobile-header {        
+  justify-content: space-between; 
+  position: sticky;        
+  top: 0;   
+  padding: 4px 16px;   
+  border-bottom: 1px solid black; 
+       
+  width: 92%;
+  height: 64px; 
+  background: #E9DCCF;   
+}
+#mobile-header button {
+  height: 100%; 
+}
+#mobile-header button p{
+  margin: 0px; 
+  font-size: 48px; 
+}
+
+
+
+/*-------------------- Aside Nav --------------------*/
+aside {
+  display: none; 
+  position: sticky; 
+  top: 0; 
+  padding: 0px 32px; 
+  min-width: 200px;
+  max-width: 280px; 
+}
+aside h2 {
+  margin-bottom: 32px; 
+}
+aside a {
+  display: block; 
+  text-decoration: none; 
+  transition: all 200ms;
+}
+aside a:hover {
+  text-decoration: underline; 
+  transform: translate(8px, 0px);
+}
+.sticky {
+  position: sticky; 
+  top: 0; 
+  padding-top: 24px;
+}
+
+/*-------------------- Cards --------------------*/
+section {
+  flex-direction: column;
+  width: 100%; 
+  flex-grow: 1; 
+}
+.card {
+  padding: 16px;
+  border-bottom: 1px solid black;
+  border-right: none; 
+  flex-direction: column; 
+  
+}
+.card-flex-left {
+  width: 100%; 
+}
+.card-flex-left {
+  width: 100%; 
+}
+.card img {
+  border: 1px solid black; 
+  width: 100%; 
+}
+.card h3 {
+  margin: 48px 24px 0 0; 
+  text-align: right; 
+  transition: all 200ms;
+}
+.card h3:hover {
+  text-decoration: underline; 
+  transform: translate(8px, 0px);
+}
+#defaultCanvas {
+  display: none;
+}
+
+
+/*-------------------- Main --------------------*/
+main {
+  margin: auto; 
+}
+
+
+
+/*-------------------- Articles --------------------*/
+article {
+  flex-direction: column; 
+  align-items: center; 
+  flex-grow: 1; 
+}
+.article-page-flex {
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between; 
+  padding: 48px 16px;
+}
+h1 {
+  width: 100%; 
+}
+.p-container {
+  margin: 32px 0px; 
+  width: 100%; 
+}
+
+.img-flex-row {
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-around; 
+  margin: 32px 0px; 
+  width: 60%;
+  min-width: 300px; 
+  max-width: 600px; 
+}
+
+figure {
+  margin: 32px 0px; 
+  text-align: center;
+  max-width: 100%;   
+}
+figure img {
+  margin-bottom: 16px; 
+  border: 1px solid black;
+}
+figcaption p {
+  margin-top: 4px;
+  color: #A74646; 
+}
+
+
+
+/*-------------------- Footer --------------------*/
+footer {      
+  padding-top: 24px; 
+  border-top: 1px solid black; 
+	width: 100%;   
+  height: 96px;   
+	background: #A99988;
+  text-align: center; 
+}
+footer p {
+  margin: 0px; 
+}
+
+
+
+/* A better looking default horizontal rule */
+hr {
+  display: block;
+  height: 1px;
+  border: 0px;
+  border-top: 1px solid #ccc;
+  margin: 1em 0px;
+  padding: 0px;
+}
+
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+/* Minimum width for iPads and tablets.  */
+@media all and (min-width: 481px) {
+
+
+
+} /* closes 481px+ */
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+  /*-------------------- Main --------------------*/
+  main { padding: 0; }
+  /*-------------------- Nav --------------------*/
+  #mobile-header { display: none; }
+  aside { display: block; }
+  /*-------------------- Section --------------------*/
+  section {
+    border-left: 1px solid black; 
+  }
+  /*-------------------- Article --------------------*/
+  article { 
+    padding: 48px 56px; 
+    border-left: 1px solid black; 
+    width: 100%; 
+  }
+  .article-page-flex {
+    padding: 0px; 
+  }
+  .img-flex-row {
+  max-width: 600px;
+  }
+  figure {
+    max-width: 60%; 
+  }
+
+/*---------- Card ----------*/
+  #home {
+    display: flex; 
+  }
+  section {
+    flex-direction: row;
+  }
+  .card {
+    display: flex; 
+    flex-direction: column;
+    border-bottom: none;
+  border-right: 1px solid black;
+    width: 33%;
+  }
+  .card-flex-left {
+    margin-right: 24px; 
+  }
+  .card-flex-right {
+    /* padding: 15px 24px;  */
+  }
+  .card h3 {
+    margin-bottom: 64px; 
+  }
+} /* closes 769px+ */
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+} /* closes 1024px+ */
